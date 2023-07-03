@@ -88,13 +88,13 @@ app.post('/:case', (req, res) => {
   switch (requestCase) {
     case 1:
         switchcase(requestData);
-        res.status(200).send(JSON.stringify({Relay: Relay}));
+        res.status(200).send(JSON.stringify({gadgets: Relay}));
         break;
     case 2:
-        res.status(200).send(JSON.stringify({Relay: Relay}));
+        res.status(200).send(JSON.stringify({gadgets: Relay}));
         break;
     case 3:
-        res.status(200).send(JSON.stringify({Relay: Relay}));
+        res.status(200).send(JSON.stringify({gadgets: Relay}));
         break;
     case 4:
         res.status(200).send(JSON.stringify({Dates: dates}));
