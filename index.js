@@ -40,7 +40,7 @@ app.use(CheckAuth)
 
 const PORT = process.env.PORT || 3000;
 
-//const server = app.listen(PORT, () => { console.log(`It Is ready to rock http://localhost:${PORT}`); });
+const server = app.listen(PORT, () => { console.log(`It Is ready to rock http://localhost:${PORT}`); });
 
 
 var Relay = [
@@ -74,11 +74,6 @@ function switchcase(body) {
 
 }
 
-console.log(Relay)
-
-switchcase({ Relay: "valve1" })
-
-console.log(Relay)
 // Define a route for handling the GET request
 app.post('/:case', (req, res) => {
 
